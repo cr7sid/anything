@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+
+    <style>
+        .head {  
+				text-align: center;
+				font-family: Georgia;
+				color:  #FF4136;
+				font-size: 45px;
+				text-decoration: underline overline;
+				}
+		.rad_wid {
+					width: 50px;
+				
+				}
+		.mainText {
+						font-size: 30px;
+	
+				}
+        label {
+            width: 12em;
+            display:inline-block;
+				}
+        
+    </style>
+</head>
+<body bgcolor = "#add8e6">
+    <h1 class="head">REGISTRATION FORM</h1>
+	<hr>
+       <b class="mainText">BASIC DETAILS</b>	
+	<hr>
+        <div class="field">
+            <label for="fname">First Name</label>
+            <input type="text" name="firName" id="fname" placeholder="Type your first name here.."><br><br>
+			<label for="lame">Last Name</label>
+            <input type="text" name="lasName" id="lname" placeholder="Type your last name here.."><br><br>
+			<label for="gname">Guardian's Name</label>
+            <input type="text" name="GuarName" id="gname" placeholder="Type your father's name here.."><br><br>
+            <label for="rno">Roll Number</label>
+            <input type="text" name="rollNum" id="rno" placeholder="Type your roll number here.."><br><br>
+            <label for="gender">Gender</label>
+            <label for="mGen" class="rad_wid">Male</label>
+            <input type="radio" name="gen" id="mGen">
+            <label for="fGen" class="rad_wid">Female</label>
+            <input type="radio" name="gen" id="fGen">
+            <br><br>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="birthDate" id="dob"><br><br>
+            <label for="pwd">PWD</label>
+			<select name="" id="pwd">
+				<option value="Choose">Choose</option>
+                <option value="Yes">YES</option>
+                <option value="No">NO</option>
+            </select><br><br>
+            <label for="cat">Category</label>
+            <select name="" id="cat">
+				<option value="choose">Choose</option>
+                <option value="gen">General</option>
+                <option value="obc">OBC</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+            </select><br><br>
+            <label for="address">Full Address</label>
+            <br>
+            <textarea name="" id="address" placeholder="Enter your Full Address here.." cols="80" rows="10"></textarea><br><br>
+            <label for="pin_code">PIN Code</label>
+            <input type="number" name="" id="pin_code" min="100001" max="999999" placeholder="Pincode.."><br><br>
+            <label for="con_num">Contact Number</label>
+                <input type="text" name="" id="con_num" value="+91" style="width: 2em;" disabled>
+                <input type="number" name="" placeholder="Mobile No.." id="con_num" max="9999999999"><br><br>
+        </div>
+        <hr>
+       <b class="mainText">ACADEMIC DETAILS</b>	
+	<hr>
+            <label for="course">Course</label>
+            <select name="" id="course">
+				<option value="choose">Choose</option>
+                <option value="btech">B.Tech</option>
+                <option value="barch">B.Arch</option>
+            </select><br><br>
+            <label for="branch">Branch</label>
+            <input type="text" placeholder="Enter your branch.." name="" id="branch"><br><br>
+            <label for="sem">Semester</label>
+            <select name="" id="sem">
+				<option value="choose">Choose</option>
+                <option value="1_sem">1st</option>
+                <option value="3_sem">3rd</option>
+                <option value="5_sem">5th</option>
+                <option value="7_sem">7th</option>
+            </select><br><br>
+            <label for="cgpa">CGPA</label>
+            <input type="number" name="" placeholder="Type here.." id="cgpa"><br><br>
+
+        <hr>
+		<b class="mainText">HOSTEL DETAILS</b>	
+	<hr>
+   
+            <label for="hostel">Are you a...</label>
+            <select name="" id="hos">
+				<option value="choose"> Choose</option>
+                <option value="hostel">Hosteller</option>
+                <option value="day_sch">Day Scholar</option>
+            </select>
+			
+                <br><br>
+            <label for="hostel_name">Name of Hostel</label>
+            <input type="text" name="" placeholder="Type here.." id="hostel_name"><br><br>
+            <label for="hostel_room">Room Number</label>
+            <input type="text" name="" placeholder="Type here.." id="hostel_room">
+		<hr>	
+       <b class="mainText">ACCOUNT DETAILS FOR REFUND</b>	
+	<hr>
+   
+            <label for="acc_holder">Account Holder Name</label>
+            <input type="text" name="" placeholder="Type here.." id="acc_holder">
+            <br><br>
+            <label for="acc_num">Account Number</label>
+            <input type="number" name="" placeholder="Type here.." id="acc_num"><br><br>
+            <label for="ifsc">IFSC Code</label>
+            <input type="number" name="" placeholder="Type here.." id="ifsc"><br><br>
+            <label for="bank_name">Bank Name</label>
+            <input type="text" name="" placeholder="Type here.." id="bank_name"><br><br>
+            <label for="bank_branch">Bank Branch</label>
+            <input type="text" name="" placeholder="Type here.." id="bank_branch">
+        </div>
+</body>
+</html>
